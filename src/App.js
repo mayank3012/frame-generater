@@ -49,7 +49,7 @@ function App() {
       </Dropzone>
       {image && (
         <div id="frame" className='relative w-[90%] aspect-square'>
-          <img src={FRAME} alt="frame" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '100%', height: '100%' }} />
+          <img src={FRAME} alt="frame" className='z-10' style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '100%', height: '100%' }} />
           <img src={image} alt="userImage" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',borderRadius:'50%', width: '65%', height: '65%' }} />
         </div>
       )}
