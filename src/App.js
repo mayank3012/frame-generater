@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="bg-[#0f172a] min-h-[100vh] py-20 sm:py-10" >
+    <div className="bg-[#0f172a] min-h-[100vh] py-10 md:py-20" >
     <div className='flex flex-col justify-center items-center min-h-[80vh] rounded-lg shadow-lg w-[90%] mx-auto max-w-[400px] bg-white bg-opacity-10 shadow-gray-700 gap-3 '>
       <h2 className='capitalize text-3xl text-white text-center'>Frame generator</h2>
         <Dropzone onDrop={handleDrop}>
