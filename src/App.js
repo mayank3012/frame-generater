@@ -40,7 +40,7 @@ function App() {
       <div className="bg-[#0f172a] min-h-[100vh] py-10 md:py-20" >
          <div className='min-h-[80vh] rounded-lg shadow-lg w-[90%] mx-auto max-w-[400px] bg-white bg-opacity-10 shadow-gray-700 gap-3 '>
       <div className='flex items-center gap-2 px-4 h-24 bg-white bg-opacity-80'>
-        <img src="/frame/logo.png" alt="navImage" className='h-[80%] w-auto' />
+        <img src="/frame/Logo.png" alt="navImage" className='h-[80%] w-auto' />
         {/* <div className='ml-auto flex gap-2'> 
           <a href="/" target='_blank' className='bg-red-900 inline-block p-2'>
             <FaFacebookF className='text-white' />
