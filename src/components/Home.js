@@ -9,7 +9,7 @@ const Home = ({ OnPgaeChange}) => {
         </button>
       </div>
       <div className='w-[95%] mx-auto h-96 mt-16 bg-white'>
-        <img src='/frame/frame.png'></img>
+        <img src='/frame/main.jpeg'></img>
       </div>
         </>
   )

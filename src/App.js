@@ -38,46 +38,23 @@ function App() {
   return (
     <>
       <div className="bg-[#0f172a] min-h-[100vh] py-10 md:py-20" >
-         
-          {page === "home" ? (
-          <>
-            <div className=' min-h-[80vh] rounded-lg shadow-lg w-[90%] mx-auto max-w-[400px] bg-white bg-opacity-10 shadow-gray-700 gap-3 '>
-      <div className='flex items-center gap-2 px-4 h-24 bg-white bg-opacity-60'>
-        <img src="/frame/frame.png" alt="navImage" className='h-[80%]' />
-        <div className='flex flex-col'>
-          <h3 className='uppercase text-red-900 font-extrabold text-xl'>HARIOM</h3>
-          <h3 className='uppercase text-green-950 font-extrabold text-2xl'>Parashari</h3>
-        </div>
-        <div className='ml-auto flex gap-2'> 
+         <div className='min-h-[80vh] rounded-lg shadow-lg w-[90%] mx-auto max-w-[400px] bg-white bg-opacity-10 shadow-gray-700 gap-3 '>
+      <div className='flex items-center gap-2 px-4 h-24 bg-white bg-opacity-80'>
+        <img src="/frame/logo.png" alt="navImage" className='h-[80%] w-auto' />
+        {/* <div className='ml-auto flex gap-2'> 
           <a href="/" target='_blank' className='bg-red-900 inline-block p-2'>
             <FaFacebookF className='text-white' />
           </a>
           <a href="/" target='_blank' className='bg-red-900 inline-block p-2'>
             <FaInstagram className='text-white' />
           </a>
-        </div>
-      </div>
+        </div> */}
+                </div>
+          {
+            page === "home" ? (
               <Home OnPgaeChange={handelChange} />
-              </div>
-            </>
           ) : (
             <>
-              <div className='min-h-[80vh] rounded-lg shadow-lg w-[90%] mx-auto max-w-[400px] bg-white bg-opacity-10 shadow-gray-700 gap-3 '>
-      <div className='flex items-center gap-2 px-4 h-24 bg-white bg-opacity-60'>
-        <img src="/frame/frame.png" alt="navImage" className='h-[80%]' />
-        <div className='flex flex-col'>
-          <h3 className='uppercase text-red-900 font-extrabold text-xl'>HARIOM</h3>
-          <h3 className='uppercase text-green-950 font-extrabold text-2xl'>Parashari</h3>
-        </div>
-        <div className='ml-auto flex gap-2'> 
-          <a href="/" target='_blank' className='bg-red-900 inline-block p-2'>
-            <FaFacebookF className='text-white' />
-          </a>
-          <a href="/" target='_blank' className='bg-red-900 inline-block p-2'>
-            <FaInstagram className='text-white' />
-          </a>
-        </div>
-                </div>
                 <div className='flex flex-col justify-center items-center gap-4 max-h-200 overflow-hidden py-16'>
               <h2 className='capitalize text-3xl text-white text-center'>Frame generator</h2>
               <Dropzone onDrop={handleDrop}>
@@ -109,11 +86,10 @@ function App() {
                   <span>Go back to Home page</span>
                   </button>
                   </div>
-                </div>
             </>
           )
           }
-      
+        </div>      
       </div>
       </>
   );
